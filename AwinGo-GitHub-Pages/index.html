@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<meta charset="utf-8">
+<meta name="description" content="回望與破局個人小復盤。抽一張卡、寫下反思，做出自己的七天行動卡。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b192d">
+<title>回望與破局｜人生的加減乘除</title>
+<style>
+:root{color-scheme:dark;--navy:#0b192d;--gold:#e3bc79;--ivory:#f5f0e5;--muted:#c4c9d2;--line:#af956654}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0,#213552,var(--navy) 65%);color:var(--ivory);font:16px/1.65 system-ui,sans-serif;min-height:100vh}main,footer{width:min(760px,calc(100% - 36px));margin:auto}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:19px 0;color:var(--gold);font-size:.82rem;letter-spacing:.15em}header a{color:var(--ivory);letter-spacing:0}section{margin:34px 0}.hero{text-align:center;margin:48px 0 32px}.kicker{color:var(--gold);font-size:.8rem;letter-spacing:.18em}h1,h2,h3,.symbol{font-family:Georgia,"Noto Serif TC",serif}h1{font-size:clamp(2.25rem,7vw,4.25rem);line-height:1.2;margin:12px 0}h2{font-size:1.55rem;margin:4px 0 12px}p{margin:8px 0;color:var(--muted)}.panel{border:1px solid var(--line);background:#10213a;padding:clamp(16px,4vw,30px);border-radius:18px}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}button{font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:10px;padding:9px 15px;background:#192c47;color:var(--ivory)}button:hover:not(:disabled){border-color:var(--gold);background:#243c5d}button:focus-visible,a:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.card{position:relative;min-height:148px;display:grid;place-content:center;gap:0;padding:8px;background:repeating-linear-gradient(135deg,#172942,#172942 12px,#192d48 13px,#172942 14px)}.card:before{content:"";position:absolute;inset:6px;border:1px solid var(--line);border-radius:6px;pointer-events:none}.symbol{font-size:3.4rem;color:var(--gold);line-height:1.1}.card small{color:var(--muted);font-size:.75rem}.card[aria-pressed=true]{background:#3a322b;border-color:var(--gold)}.card:disabled:not([aria-pressed=true]){opacity:.46;cursor:default}.card:disabled[aria-pressed=true]{cursor:default}.primary{background:var(--gold);color:#182236;border:0;font-weight:700}.primary:hover:not(:disabled){background:#f1d298}.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.question{font-size:1.15rem;color:var(--ivory)}label{display:block;margin-top:18px;font-weight:650}textarea,input[type=date]{display:block;width:100%;margin:5px 0 14px;border:1px solid var(--line);border-radius:9px;background:#0b192d;color:var(--ivory);font:inherit;padding:11px}textarea{resize:vertical;min-height:84px}.hint,footer{font-size:.83rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:20px 0 32px}.record{border-top:1px solid var(--line);padding:15px 0}.record p{white-space:pre-wrap;overflow-wrap:anywhere}.record h3{margin:0;color:var(--gold)}#status{color:var(--gold)}[hidden]{display:none!important}@media(max-width:500px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.card{min-height:108px}}
+
+:root{--gold:#d5ac62}
+[tabindex="-1"]:focus{outline:none}
+header{justify-content:center}.steps{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;margin-top:20px;color:var(--muted);font-size:.82rem}.steps span[aria-current=step]{color:var(--gold);font-weight:700}
+.card .symbol{font-size:2.85rem}.art{position:relative;isolation:isolate;width:min(100%,410px);min-height:420px;margin:0 auto 20px;padding:30px clamp(25px,7vw,44px);border:1px solid var(--gold);border-radius:4px;text-align:center;background:radial-gradient(ellipse at 50% 0,#293b54,#0b192d 65%);box-shadow:0 20px 45px #0005;display:flex;flex-direction:column;justify-content:center;align-items:center}.art:before,.art:after{content:"";position:absolute;inset:8px;border:1px solid var(--line);pointer-events:none}.art:after{inset:13px;border-color:#af95662f}.art .emblem{width:34px;color:var(--gold);margin-bottom:10px}.art .brand{color:var(--gold);letter-spacing:.27em;font-size:.76rem}.art h2{font-size:clamp(1.9rem,7vw,2.7rem);margin:2px 0}.art .theme{color:var(--gold);margin:8px 0 0}.art .rule{width:80%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:16px 0}.art .commitment{color:var(--ivory);font-size:1.16rem;font-weight:650;white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%}.art .signature{color:var(--gold);letter-spacing:.18em;font-size:.73rem}.center{justify-content:center;text-align:center}.photo-mode header,.photo-mode .steps,.photo-mode footer,.photo-mode #shareIntro,.photo-mode #cardControls{display:none}.photo-mode #result{margin:14px 0}.photo-mode #exitPhoto{display:block!important;margin:0 auto 16px}
+.art .discovery{max-width:100%;margin:0 0 16px}.art .discovery p{margin:4px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.hero .hook{color:var(--ivory);font-size:clamp(1.12rem,3.5vw,1.45rem);font-weight:650;text-wrap:balance}.panel strong{color:var(--ivory)}
+.brand-emblem{display:block;object-fit:cover;border-radius:50%;box-shadow:0 0 24px #d5ac6230}.hero-emblem{margin:0 auto 18px}.card-emblem{margin:0 auto 14px}.brand-scan{text-align:center;margin:28px 0 0}.brand-scan img{display:block;margin:auto;border-radius:50%;max-width:100%;height:auto}.brand-scan p{font-size:.85rem}.photo-mode .brand-scan{display:none}
+.crystal-diamond{display:block;width:clamp(50px,12vw,76px);height:auto;margin:0 auto 4px;filter:drop-shadow(0 0 6px #a9ddff78)}.card:hover:not(:disabled) .crystal-diamond,.card:focus-visible .crystal-diamond{filter:drop-shadow(0 0 10px #d6f1ffe0)}
+</style>
+<main>
+<header><span>◇ AWINGO ／ 個人小復盤</span></header>
+<nav class="steps" aria-label="目前步驟"><span id="step1" aria-current="step">01 抽一張卡</span><span id="step2">02 回望紀錄</span><span id="step3">03 破局行動卡</span></nav>
+<div id="page1">
+<section class="hero">
+<img class="brand-emblem hero-emblem" src="assets/awingo-emblem.jpg" alt="AwinGo" width="96" height="96">
+<div class="kicker">個人小復盤 · 人生的加減乘除</div>
+<h1 id="mainTitle" tabindex="-1">回望與破局</h1>
+<p class="hook">有哪件事，你明明很想做，卻又默默挪到下個月？</p>
+</section>
+<section class="panel" aria-labelledby="draw-title">
+<div class="kicker">01 ／ 抽一張卡</div>
+<h2 id="draw-title">想到一件就好。</h2>
+<p>帶著它翻一張卡。加、減、乘、除，各藏著一個問題。<br>也許翻開才發現，<strong>這七天內，你已經有一步可以走了。</strong></p>
+<div class="cards" id="cards"></div>
+<div class="actions"><button type="button" id="random" class="primary">抽一張，看看我的第一步</button><button type="button" id="openHistory">查看我的紀錄</button></div>
+</section>
+</div>
+<div id="page2" hidden>
+<section class="panel" id="reflection" hidden aria-labelledby="prompt-title">
+<div class="kicker">02 ／ 回望紀錄</div>
+<h2 id="prompt-title" tabindex="-1"></h2>
+<p id="question" class="question"></p>
+<p id="nudge"></p>
+<form id="form">
+<label for="note">我想到的事</label>
+<textarea id="note" required maxlength="4000" placeholder="可以從一段書裡的話，或最近的一件小事開始。"></textarea>
+<label for="discovery">我發現，我可以…… <span class="hint">（選填，60 字內）</span></label>
+<textarea id="discovery" maxlength="60" placeholder="例如：先找熟悉的朋友練習，慢慢累積上台的信心。"></textarea>
+<label for="action">這七天內，我可以做的第一步是 <span class="hint">（140 字內）</span></label>
+<textarea id="action" required maxlength="140" placeholder="例如：週五午休，找一位朋友試講三分鐘。"></textarea>
+<label for="due">打算哪天做 <span class="hint">（選填）</span></label>
+<input id="due" type="date">
+<div class="actions"><button class="primary">儲存並產出行動卡</button><button type="button" id="backToDraw">返回抽卡</button></div>
+</form>
+<p id="status" role="status"></p>
+</section>
+<section class="panel" id="history" aria-labelledby="history-title">
+<div class="kicker">歷次回望</div>
+<h2 id="history-title" tabindex="-1">我的反思紀錄</h2>
+<p class="hint">紀錄存在目前使用的瀏覽器。下次用同一個瀏覽器開啟，可以回來查看。</p>
+<div id="records"></div>
+<button type="button" id="historyBack" hidden>返回抽卡</button>
+</section>
+</div>
+<section id="result" hidden aria-labelledby="cardTitle">
+<div class="hero" id="shareIntro"><div class="kicker">03 ／ 破局行動卡</div><h2 id="resultTitle" tabindex="-1">把這一步帶走</h2><p>開啟截圖模式，把你的反思和七天行動一起存進手機相簿。</p></div>
+<article class="art">
+<img class="brand-emblem card-emblem" src="assets/awingo-emblem.jpg" alt="AwinGo" width="68" height="68">
+<div class="brand">個人小復盤 · 個人行動卡</div>
+<h2 id="cardTitle">回望與破局</h2>
+<p class="theme" id="cardTheme"></p>
+<div class="rule"></div>
+<div class="discovery">
+<div class="kicker">反思紀錄</div>
+<p id="cardReflection"></p>
+</div>
+<div id="cardDiscovery" class="discovery" hidden>
+<div class="kicker">我發現…我可以…</div>
+<p id="cardDiscoveryText"></p>
+</div>
+<div class="kicker">MVP 行動第一步</div>
+<p class="commitment" id="cardAction"></p>
+<p id="cardDate" class="hint"></p>
+<div class="rule"></div>
+<div class="signature">◇ AWINGO</div>
+</article>
+<div class="actions center" id="cardControls"><button type="button" class="primary" id="photo">開啟截圖模式</button><button type="button" id="startOver">再抽一張</button></div>
+<aside class="brand-scan" aria-label="AwinGo 品牌 QR Code">
+<img src="assets/awingo-qr.png" alt="AwinGo 品牌 QR Code" width="180" height="180" loading="lazy">
+<p>掃描 QR Code，認識 AwinGo</p>
+</aside>
+<button type="button" id="exitPhoto" hidden>離開截圖模式</button>
+</section>
+</main>
+<footer>◇ AwinGo · 回望與破局</footer>
+<script>
+const deck = [
+  {symbol:'＋', title:'加速行動', question:'有哪件事，你想了很久，可以先做一次小的？', nudge:'想想你能在哪裡、找誰，或用幾分鐘先試一次。'},
+  {symbol:'－', title:'減去恐懼', question:'想到第一次做這件事，你最怕發生什麼？', nudge:'回想一次做了才發現沒那麼可怕的經驗。有哪個做法能再用一次？'},
+  {symbol:'×', title:'乘勝追擊', question:'朋友遇到什麼問題，會第一個想到你？', nudge:'挑一個你用過好幾次的做法，想想怎麼整理成別人也能照著做的步驟。'},
+  {symbol:'÷', title:'除去擔憂', question:'最近反覆想的那件事，有哪一小部分是現在就能處理的？', nudge:'挑一件能處理的排進行事曆，剩下的先寫在一旁。'}
+];
+const byId = id => document.getElementById(id);
+const key = 'awingo-life-four-records-v1';
+const form = byId('form');
+const note = byId('note');
+const action = byId('action');
+const discovery = byId('discovery');
+const due = byId('due');
+const status = byId('status');
+let order, selected;
+function showPage(step, focusId) {
+  ['page1', 'page2', 'result'].forEach((id, index) => {
+    const active = index === step - 1;
+    byId(id).hidden = !active;
+    const marker = byId('step' + (index + 1));
+    if (active) marker.setAttribute('aria-current', 'step');
+    else marker.removeAttribute('aria-current');
+  });
+  window.scrollTo(0, 0);
+  if (focusId) byId(focusId).focus({preventScroll: true});
+}
+function setPhotoMode(active) {
+  document.body.classList.toggle('photo-mode', active);
+  byId('exitPhoto').hidden = !active;
+  window.scrollTo(0, 0);
+  byId(active ? 'exitPhoto' : 'photo').focus({preventScroll: true});
+}
+function readRecords() {
+  const value = JSON.parse(localStorage.getItem(key) || '[]');
+  if (!Array.isArray(value)) throw new Error('Invalid records');
+  return value;
+}
+function renderRecords() {
+  const list = byId('records');
+  list.replaceChildren();
+  try {
+    const records = readRecords();
+    if (!records.length) list.textContent = '抽張卡，留下你的第一筆紀錄。';
+    for (const record of records) {
+      const item = document.createElement('article');
+      item.className = 'record';
+      const fields = [
+        ['h3', record.card],
+        ['p', '紀錄日期　' + new Date(record.created).toLocaleDateString('zh-TW')],
+        ['p', '反思｜' + record.note],
+        ...(record.discovery ? [['p', '我發現，我可以……｜' + record.discovery]] : []),
+        ['p', '行動｜' + record.action]
+      ];
+      if (record.due) fields.push(['p', '預計日期　' + record.due]);
+      for (const [tag, value] of fields) {
+        const field = document.createElement(tag);
+        field.textContent = value;
+        item.append(field);
+      }
+      list.append(item);
+    }
+  } catch {
+    list.textContent = '目前無法讀取紀錄，請確認瀏覽器允許網站儲存資料。';
+  }
+}
+function draw(index) {
+  if (selected) return;
+  selected = order[index];
+  Array.from(byId('cards').children).forEach((card, position) => {
+    card.disabled = true;
+    card.setAttribute('aria-pressed', String(index === position));
+    if (index === position) {
+      card.firstElementChild.textContent = selected.symbol;
+      card.lastElementChild.textContent = selected.title;
+    }
+  });
+  byId('random').hidden = true;
+  byId('prompt-title').textContent = selected.symbol + ' ' + selected.title;
+  byId('question').textContent = selected.question;
+  byId('nudge').textContent = selected.nudge;
+  byId('reflection').hidden = false;
+  byId('historyBack').hidden = true;
+  showPage(2, 'prompt-title');
+}
+function shuffle() {
+  selected = null;
+  order = [...deck];
+  for (let index = order.length - 1; index > 0; index--) {
+    const swap = Math.floor(Math.random() * (index + 1));
+    [order[index], order[swap]] = [order[swap], order[index]];
+  }
+  byId('cards').replaceChildren();
+  order.forEach((_, index) => {
+    const card = document.createElement('button');
+    card.className = 'card';
+    card.type = 'button';
+    card.setAttribute('aria-pressed', 'false');
+    card.innerHTML = '<span class="symbol" aria-hidden="true"><img class="crystal-diamond" src="assets/crystal-diamond.svg" alt="" width="76" height="64"></span><small>第 ' + (index + 1) + ' 張</small>';
+    card.addEventListener('click', () => draw(index));
+    byId('cards').append(card);
+  });
+  form.reset();
+  status.textContent = '';
+  byId('reflection').hidden = true;
+  byId('random').hidden = false;
+
+}
+byId('random').addEventListener('click', () => draw(Math.floor(Math.random() * deck.length)));
+byId('backToDraw').addEventListener('click', () => {
+  if ((note.value || discovery.value || action.value || due.value) && !confirm('這次的內容還沒儲存，要重新抽卡嗎？')) return;
+  shuffle();
+  showPage(1, 'mainTitle');
+});
+byId('openHistory').addEventListener('click', () => {
+  byId('historyBack').hidden = false;
+  renderRecords();
+  showPage(2, 'history-title');
+});
+byId('historyBack').addEventListener('click', () => showPage(1, 'mainTitle'));
+byId('photo').addEventListener('click', () => setPhotoMode(true));
+byId('exitPhoto').addEventListener('click', () => setPhotoMode(false));
+byId('startOver').addEventListener('click', () => {
+  shuffle();
+  showPage(1, 'mainTitle');
+});
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  const reflection = note.value.trim();
+  const nextAction = action.value.trim();
+  if (!selected || !reflection || !nextAction) {
+    status.textContent = '請先寫下一個反思和一個行動。';
+    (!reflection ? note : action).focus();
+    return;
+  }
+  const record = {card: selected.symbol + ' ' + selected.title, note: reflection, discovery: discovery.value.trim(), action: nextAction, due: due.value, created: new Date().toISOString()};
+  try {
+    const records = readRecords();
+    records.unshift(record);
+    localStorage.setItem(key, JSON.stringify(records));
+  } catch {
+    status.textContent = '這次沒有儲存成功，文字仍在欄位裡。請確認瀏覽器允許網站儲存資料。';
+    return;
+  }
+  form.reset();
+  renderRecords();
+  byId('cardTheme').textContent = record.card;
+  byId('cardReflection').textContent = record.note;
+  byId('cardDiscovery').hidden = !record.discovery;
+  byId('cardDiscoveryText').textContent = record.discovery;
+  byId('cardAction').textContent = record.action;
+  byId('cardDate').hidden = !record.due;
+  byId('cardDate').textContent = record.due ? '預計行動日　' + record.due.replaceAll('-', '／') : '';
+  showPage(3, 'resultTitle');
+});
+shuffle();
+renderRecords();
+</script>
+</html>
